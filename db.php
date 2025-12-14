@@ -11,7 +11,7 @@ $db = "camarasweb";
 $user = "mysql";
 
 // **IMPORTANTE**: Reemplaza 'TU_CONTRASEÑA_REAL' con la contraseña que tienes oculta
-$pass = "TU_CONTRASEÑA_REAL"; 
+$pass = "587e8215291ae15adc3b"; 
 
 // --- Establecer la Conexión ---
 $conn = new mysqli($host, $user, $pass, $db);
