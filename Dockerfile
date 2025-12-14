@@ -9,6 +9,6 @@ COPY login.html /usr/share/nginx/html/login.html
 COPY register.html /usr/share/nginx/html/register.html
 
 # Copiamos TODA la carpeta de imágenes
-COPY imaguen/ /usr/share/nginx/html/imaguen/
+COPY Imaguen/ /usr/share/nginx/html/imaguen/
 
 EXPOSE 80
