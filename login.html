@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    body::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 1000px;
+        height: 500px;
+        background: white;
+        display: flex;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 0 35px rgba(0,0,0,0.4);
+        position: relative;
+        z-index: 2;
+    }
+
+    .left {
+        width: 55%;
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: white;
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .left h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    .left p {
+        font-size: 18px;
+        line-height: 28px;
+        max-width: 80%;
+    }
+
+    .right {
+        width: 45%;
+        background: #ffffff;
+        padding: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .right h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #444;
+    }
+
+    input {
+        width: 100%;
+        padding: 14px;
+        border-radius: 30px;
+        border: 1px solid #bbb;
+        margin-bottom: 20px;
+        padding-left: 18px;
+        font-size: 15px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
+        cursor: pointer;
+        background: linear-gradient(135deg, #6a11cb, #ff6a88);
+        color: white;
+        font-weight: bold;
+    }
+
+    .links {
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+    }
+
+    .links a {
+        color: #6a11cb;
+        text-decoration: none;
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="left">
+        <h1>Bienvenido</h1>
+        <p>
+            Accede a la plataforma para gestionar cámaras web y funciones exclusivas.
+        </p>
+    </div>
+
+    <div class="right">
+        <h2>Iniciar Sesión</h2>
+
+        <!-- 🔽 FORMULARIO REAL PARA PHP -->
+        <form action="login.php" method="POST">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+
+            <button type="submit">ENTRAR</button>
+        </form>
+
+        <div class="links">
+            <span></span>
+            <a href="register.html">Crear cuenta</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
